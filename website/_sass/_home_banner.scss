@@ -1,0 +1,33 @@
+#site-header {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: $brand-background-color;
+    z-index: 10;
+    padding-bottom: 2em;
+    margin-bottom: 4em;
+    color: $brand-color;
+}
+
+
+#site-header #site-title {
+    margin-bottom: 2rem;
+    padding: 0 1rem;
+    margin-top: 2rem;
+    width: 100px;
+}
+
+
+.site-banner {
+    width: 100%;
+
+    canvas {
+        min-height: 300px;
+        max-width: 100%;
+    }
+}
+
+.site-blurb {
+    padding-bottom: 0.4em;
+}

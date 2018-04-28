@@ -1,0 +1,65 @@
+.gif-renderer {
+    flex: 1;
+    display: flex;
+    width: 100%;
+    user-select: none;
+    position: relative;
+
+    .three-container {
+        box-sizing: border-box;
+        border-top: 1px solid $text-color;
+    }
+
+    .three-canvas {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+}
+
+.three-container {
+    position: relative;
+    -webkit-user-select: none;
+    user-select: none;
+    display: grid;
+    width: 100%;
+
+    canvas {
+        width: 100% !important;
+        height: 100% !important;
+    }
+
+    .three-controls {
+        border: 1px solid $text-color;
+        background: rgba(255, 255, 255, 0.85);
+        display: flex;
+
+        button {
+            display: block;
+            font-size: 10px;
+            padding: 4px 8px;
+            border: none;
+            border-right: 1px solid $text-color
+        }
+
+        button:last-child {
+            border-right: none;
+        }
+    }
+
+    .three-view-controls-wrapper {
+        position: absolute;
+        margin: 0 auto;
+        bottom: 10px;
+        left: 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        z-index: 10;
+        pointer-events: none;
+
+        .three-view-controls {
+            pointer-events: all;
+        }
+    }
+}
