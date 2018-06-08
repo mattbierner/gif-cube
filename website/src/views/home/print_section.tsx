@@ -56,7 +56,7 @@ export class PrintSection extends React.Component<PrintSectionProps, PrintSectio
                         <div>
                             {frames}
                         </div>
-                        <p>... checkout and recieve a physical copy of it!</p>
+                        <p>... checkout and receive a physical copy of it!</p>
                     </div>
                 </div>
             </div>
